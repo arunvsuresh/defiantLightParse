@@ -1,11 +1,12 @@
 /* global defiantLightParse, describe, it, expect, should */
 
-describe('defiantLightParse()', function () {
+describe('mailboy()', function () {
   'use strict';
 
-  it('exists', function () {
-    expect(defiantLightParse).to.be.a('function');
+  //var mailboy = function(){};
 
+  it('exists', function () {
+    expect(mailboy).to.be.a('function');
   });
 
   it('does something', function () {
