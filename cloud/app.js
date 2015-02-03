@@ -1,6 +1,7 @@
 var express = require('express');
-var creds = require('cloud/creds');
-var fauxPoe = require('cloud/faux-poe.js');
+var bodyParser = require('body-parser');
+var creds = require('creds.js');
+var fauxPoe = require('faux-poe.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
@@ -42,7 +43,12 @@ var mailboy=function(address, message){
 
 
 var app = express();
-app.use(express.bodyParser());
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.use(bodyParser.json());
 
 app.post('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), function(req, res) {
   //remove this when you're sure everything's working properly
@@ -68,3 +74,4 @@ app.get('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), f
 });
 
 app.listen();
+

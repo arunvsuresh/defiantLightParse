@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-      "chai": "~1.8.0"
+      "chai": "~1.8.0",
+      "express": "4.11.2"
   },
   "scripts": {
     "test": "mocha ./spec/defiantLightParse.js"
