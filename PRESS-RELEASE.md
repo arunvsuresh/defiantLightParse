@@ -61,6 +61,6 @@ Once the project moves into development, the press release can be used as a touc
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
 
-  We've made it incredibly easy to buy and sell digital content via Bitcoin. Visit fauxpoe.com to see what all the fuss is about.
+  We've made it incredibly easy to buy and sell digital content via Bitcoin. Visit fauxpoe.com to see what all the fuss is about!
 
 
